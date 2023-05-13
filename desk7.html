@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="desk7.css">
+    <title>Setup-profile-2</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="link" href="index.html"> <span style="color:#217059">FID</span>NEER</a>
+    </nav>
+
+    <main>
+        <div class="profile-info">
+            <div class="progress">
+                <div class="completed-box"> <span class="num"> 1 </span></div>
+                <div class="line"></div>
+                <div class="completed-box"> <span class="num"> 2 </span></div>
+                <div class="line rem-line"></div>
+                <div class="completed-box rem-box"> <span class="num disabled"> 3 </span></div>
+                <div class="line rem-line"></div>
+                <div class="completed-box rem-box"> <span class="num disabled"> 4 </span></div>
+            </div>
+            <div class="text1">
+                <span> Choose your interest </span>
+                <span> Complete your profile </span>
+                <span class="disabled"> Get verified </span>
+                <span class="disabled"> You are ready to go </span>
+            </div>
+            <div class="profile-text"> <span class="text2"> Profile information </span>
+                <span class="text3"> Complete Your profile with accurate details </span>
+            </div>
+        </div>
+
+        <!-- FORM -->
+
+        <form class="form">
+            <div class="text4" for="profile-pic">Profile Picture</div>
+            <div class="profilepic">
+                <div class="add-profilepic">
+                    <div class="greenbackgrnd"><img src="desk7//svg/Vector.svg" alt="#"> </div>
+                    <label class="text3" for="profile-pic"> Add a profile picture </label>
+                </div>
+                <input class="file" type="file" id="profile-pic" name="pic" accept="image/png, image/jpeg"
+                    name="Browse">
+            </div>
+            <div class="name">
+                <label for="name" class="text4">Name</label>
+                <input type="text" id="name" class="input-name ps-2" placeholder="Name">
+            </div>
+            <div class="bio">
+                <label for="bio" class="text4">Bio</label>
+                <textarea id="bio" class="input-bio" placeholder="Brief description for your profile."></textarea>
+            </div>
+            <div class="dob-gender">
+                <div class="dob">
+                    <label for="dob" class="text4 mb-2">Date Of Birth</label>
+                    <div class="select-dob">
+                        <select class="form-select select-border me-3" aria-label="Default select example">
+                            <option selected class="date">Date</option>
+                            <option value="1" class="date">1</option>
+                            <option value="2" class="date">2</option>
+                            <option value="3" class="date">3</option>
+                            <option value="4" class="date">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select class="form-select select-border me-3" aria-label="Default select example">
+                            <option selected>Month</option>
+                            <option value="JAN">JAN</option>
+                            <option value="FEB">FEB</option>
+                            <option value="MAT">MAR</option>
+                            <option value="APR">APR</option>
+                            <option value="MAY">MAY</option>
+                            <option value="JUNE">JUNE</option>
+                            <option value="JULY">JULY</option>
+                            <option value="AUG">AUG</option>
+                            <option value="SEP">SEP</option>
+                            <option value="OCT">OCT</option>
+                            <option value="NOV">NOV</option>
+                            <option value="DEC">DEC</option>
+                        </select>
+                        <select class="form-select select-border" aria-label="Default select example">
+                            <option selected>Year</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2001</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="gender">
+                    <label for="gender" class="text4 mb-2">Gender</label>
+                    <div class="select-gender">
+                        <select class="form-select select-border">
+                            <option selected>Gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Non-Binary</option>
+                            <option value="F">Other</option>
+                            <option value="F">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="occupation-location">
+                <div class="occupation">
+                    <label for="occupation" class="text4">Occupation</label>
+                    <input type="text" id="occupation" class="input-occupation" placeholder="I’m a Graphic Designer">
+                </div>
+                <div class="location">
+                    <label for="location" class="text4">Location</label>
+                    <div class="input-svg ">
+                        <input type="text" id="location" class="input-location" placeholder="City Name">
+                        <img src="desk7/svg/location.svg" alt="#" class="m-3">
+                    </div>
+                </div>
+            </div>
+            <section class="save">
+                <a href="desk8.html" class="link"> <button type="button" class="btn btn-success btn-lg btn-save">SAVE &
+                        CONTINUE</button></a>
+                <a href="desk6.html" class="link">
+                    <div class="previous">
+                        <img src="desk7/svg/back.svg" alt="#">
+                        <span class="text4"> Previous </span>
+                    </div>
+                </a>
+            </section>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

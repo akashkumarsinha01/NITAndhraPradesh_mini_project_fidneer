@@ -1,0 +1,181 @@
+header {
+    position: fixed;
+       box-sizing: border-box;
+/* 
+       position: absolute; */
+       width: 1436px;
+       height: 100px;
+       left: 0px;
+       top: 0px;
+
+       background: #ffffff;
+       border: 1px solid rgba(0, 0, 0, 0.2);
+       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+       z-index: 100;
+     }
+     
+     .fidneer {
+       position: absolute;
+       margin-top: 33.5px;
+       margin-bottom: 33.5px;
+       margin-left: 40px;
+       left: 0%;
+       right: 0%;
+       top: 0%;
+       bottom: 0%;
+
+       font-family: "Hind Siliguri", sans-serif;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 33px;
+       /* identical to box height */
+
+       letter-spacing: 0.1em;
+     }
+
+     #search {
+       border: 1px solid black;
+       border-top-left-radius: 37px;
+       border-bottom-left-radius: 37px;
+       padding-left: 90px;
+       width: 616px;
+       height: 61px;
+
+     }
+     input {
+       font-size: 18px;
+     }
+
+     input:focus-visible{
+       outline: none;
+     }
+
+     #search::placeholder {
+       position: absolute;
+       width: 231px;
+       height: 22px;
+       left: 90px;
+       top: 20px;
+
+       /* Button- TEXT */
+
+       font-family: "Inter";
+       font-style: normal;
+       font-weight: 500;
+       font-size: 18px;
+       line-height: 22px;
+       /* identical to box height */
+
+       display: flex;
+       align-items: center;
+       text-align: center;
+
+       color: rgba(0, 0, 0, 0.7);
+     }
+     .navbar .searchbutton {
+       position: absolute;
+       left: 157px;
+       top: 19px;
+       display: flex;
+     }
+
+     .durbinimg {
+       position: absolute;
+       display: block;
+       height: 35.71px;
+       width: 35.71px;
+       top: 12.13px;
+       left: 16.13px;
+     }
+     .searchimg {
+       width: 124px;
+       border-top-right-radius: 37px;
+       border-bottom-right-radius: 37px;
+     }
+     .bell {
+       position: absolute;
+
+       left: 939.5px;
+       top: 35px;
+       width: 25px;
+       height: 30px;
+
+       background: white;
+     }
+
+     .mail {
+       position: absolute;
+       right: 400px;
+       top: 37.63px;
+       width: 27.5px;
+       height: 24.75px;
+
+       /* camping */
+
+       background: white;
+     }
+     .mytrip {
+       position: absolute;
+       right: 280px;
+       top: 39px;
+     }
+     .postmytrip {
+       position: absolute;
+       top: 39px;
+       right: 139px;
+     }
+     .triptext {
+       position: absolute;
+       font-family: "Inter";
+       font-style: normal;
+       font-weight: 500;
+       font-size: 18px;
+       line-height: 22px;
+       /* identical to box height */
+
+       display: flex;
+       align-items: center;
+       text-align: center;
+
+       color: rgba(0, 0, 0, 0.7);
+       border: none;
+       background-color: white;
+     }
+     .navbarphoto {
+       position: absolute;
+       width: 60px;
+       height: 60px;
+
+       top: 20px;
+       right: 40px;
+
+       /* Inside auto layout */
+
+       flex: none;
+       order: 4;
+       flex-grow: 0;
+     }
+
+     .container{
+         height:900px;
+     }
+
+     .container img{ width:500px;
+    height:500px;}
+
+   .mainimg { position :absolute;
+        top:120px;}
+
+        .button1{
+            position: absolute;
+    top: 962px;
+    left: 402px;
+    width: 134px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: rgb(19, 88, 19);
+    color:white;
+    font-size: 19px;
+}
+        

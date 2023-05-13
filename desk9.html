@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    .main {
+      height: 1150px;
+      width: 100%;
+      padding-bottom: 45px;
+    }
+
+    .navbar {
+      position: absolute;
+      width: 103px;
+      height: 33px;
+      left: 40px;
+      top: 40px;
+      font-family: "Hind Siliguri", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 33px;
+      letter-spacing: 0.1em;
+    }
+
+    .navbar-brand {
+      padding-top: var(--bs-navbar-brand-padding-y);
+      padding-bottom: var(--bs-navbar-brand-padding-y);
+      margin-right: var(--bs-navbar-brand-margin-end);
+      font-size: var(--bs-navbar-brand-font-size);
+      color: var(--bs-navbar-brand-color);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .heading1 {
+      position: absolute;
+      width: 1076px;
+      height: 39px;
+
+      left: 180px;
+      top: 131px;
+
+      /* Heading-4 */
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #000000;
+    }
+
+    .profile-info {
+      padding: 0px;
+      gap: 60px;
+      position: absolute;
+      width: 1027px;
+      height: 211px;
+      left: 0px;
+      top: 0px;
+    }
+
+    .progress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 923px;
+      height: 50px;
+      left: 231px;
+      right: 275px;
+
+      top: 214px;
+      bottom: 922px;
+      background: none;
+    }
+
+    .completed-box {
+      height: 50px;
+      width: 50px;
+      left: 0px;
+      top: 0px;
+      border-radius: 50%;
+      border: 3px solid #0bb685;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .rem-box {
+    border: 3px solid #C5C5C5;
+} */
+
+    .num {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #0bb685;
+    }
+
+    .line {
+      display: inline;
+      box-sizing: border-box;
+      width: 253px;
+      height: 0px;
+      border: 2px solid #0bb685;
+    }
+
+    /* .rem-line {
+    border: 2px solid #C5C5C5;
+} */
+
+    .text1 {
+      position: absolute;
+      width: 1027px;
+      height: 26px;
+      left: 177px;
+      top: 269px;
+      right: 275px;
+      bottom: 922px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #0bb685;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .heading2 {
+      position: absolute;
+      width: 725px;
+      height: 102px;
+      left: 358px;
+      top: 407px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 51px;
+      text-align: center;
+
+      color: #000000;
+    }
+
+    .image {
+      position: absolute;
+      height: 346.72px;
+      width: 347.44px;
+      left: 524px;
+      top: 569px;
+
+      bottom: 297.28px;
+    }
+
+    .btn {
+      /* Component 2 */
+
+      /* Auto layout */
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      gap: 10px;
+
+      position: absolute;
+      width: 335px;
+      height: 69px;
+      left: 600px;
+      top: 1099px;
+      margin-bottom: 45px;
+
+      background: #217059;
+      border-radius: 10px;
+    }
+
+    .signup {
+      /* Sign Up */
+
+      width: 132px;
+      height: 29px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 29px;
+      /* identical to box height */
+
+      text-align: center;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .homepage {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #217059">FID</span>NEER</a>
+    </nav>
+
+    <div class="heading1">
+      You are just few steps away to start looking for your travel companion
+    </div>
+    <div class="profile-info">
+      <div class="progress">
+        <div class="completed-box"><span class="num"> 1 </span></div>
+        <div class="line"></div>
+        <div class="completed-box"><span class="num"> 2 </span></div>
+        <div class="line rem-line"></div>
+        <div class="completed-box rem-box">
+          <span class="num disabled"> 3 </span>
+        </div>
+        <div class="line rem-line"></div>
+        <div class="completed-box rem-box">
+          <span class="num disabled"> 4 </span>
+        </div>
+      </div>
+      <div class="text1">
+        <span> Choose your interest </span>
+        <span> Complete your profile </span>
+        <span> Get verified </span>
+        <span> You are ready to go </span>
+      </div>
+    </div>
+    <div class="heading2">Start Looking for your Travel companion</div>
+    <div class="image"><img src="desk9/image.png" alt="#" /></div>
+    <a class="homepage" href="homepage.html">
+      <buton class="btn signup">Home Page</buton>
+    </a>
+  </div>
+</body>
+
+</html>

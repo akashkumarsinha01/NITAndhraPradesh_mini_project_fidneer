@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    header {
+      position: fixed;
+      box-sizing: border-box;
+      /* 
+        position: absolute; */
+      width: 1436px;
+      height: 100px;
+      left: 0px;
+      top: 0px;
+
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      z-index: 100;
+    }
+
+    .fidneer {
+      position: absolute;
+      margin-top: 33.5px;
+      margin-bottom: 33.5px;
+      margin-left: 40px;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+
+      font-family: "Hind Siliguri", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 33px;
+      /* identical to box height */
+
+      letter-spacing: 0.1em;
+    }
+
+    #search {
+      border: 1px solid black;
+      border-top-left-radius: 37px;
+      border-bottom-left-radius: 37px;
+      padding-left: 90px;
+      width: 616px;
+      height: 61px;
+
+    }
+
+    input {
+      font-size: 18px;
+    }
+
+    input:focus-visible {
+      outline: none;
+    }
+
+    #search::placeholder {
+      position: absolute;
+      width: 231px;
+      height: 22px;
+      left: 90px;
+      top: 20px;
+
+      /* Button- TEXT */
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar .searchbutton {
+      position: absolute;
+      left: 157px;
+      top: 19px;
+      display: flex;
+    }
+
+    .durbinimg {
+      position: absolute;
+      display: block;
+      height: 35.71px;
+      width: 35.71px;
+      top: 12.13px;
+      left: 16.13px;
+    }
+
+    .searchimg {
+      width: 124px;
+      border-top-right-radius: 37px;
+      border-bottom-right-radius: 37px;
+    }
+
+    .bell {
+      position: absolute;
+
+      left: 939.5px;
+      top: 35px;
+      width: 25px;
+      height: 30px;
+
+      background: white;
+    }
+
+    .mail {
+      position: absolute;
+      right: 400px;
+      top: 37.63px;
+      width: 27.5px;
+      height: 24.75px;
+
+      /* camping */
+
+      background: white;
+    }
+
+    .mytrip {
+      position: absolute;
+      right: 280px;
+      top: 39px;
+    }
+
+    .postmytrip {
+      position: absolute;
+      top: 39px;
+      right: 139px;
+    }
+
+    .triptext {
+      position: absolute;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.7);
+      border: none;
+      background-color: white;
+    }
+
+    .navbarphoto {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+
+      top: 20px;
+      right: 40px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 4;
+      flex-grow: 0;
+    }
+
+    .main2 {
+      position: absolute;
+      width: 1436px;
+      height: 695px;
+      left: 0px;
+      top: 101px;
+
+      background: #ffffff;
+    }
+
+    .main21 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 68px;
+
+      position: absolute;
+      width: 876px;
+      height: 447px;
+      left: 281px;
+      top: 80px;
+
+    }
+
+    .findbestpartner {
+      width: 734px;
+      height: 174px;
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 87px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #000000;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .main22 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 34px;
+
+      width: 876px;
+      height: 205px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+    }
+
+    .main22 .searchbutton {
+      /* display: none; */
+      position: absolute;
+
+      top: 242px;
+      display: flex;
+    }
+
+    .main22 .manali1 {
+
+      top: 332px;
+      position: absolute;
+      display: flex;
+
+    }
+
+    .kullumanali {
+      margin-right: 45px;
+    }
+
+    .manali1 {
+      margin-left: 20px;
+    }
+
+    .manali2 {
+      margin-left: 20px;
+    }
+
+    .main22 .manali2 {
+      position: absolute;
+      top: 400px;
+      display: flex;
+    }
+
+    .kullumanali {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: rgba(0, 0, 0, 0.4);
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      padding: 10px 10px;
+      background: rgba(207, 255, 223, 0.5);
+      border-radius: 61px;
+    }
+
+
+    .kullumanali:hover {
+      background-color: #0bb685;
+    }
+
+    .main3 {
+      position: absolute;
+      width: 1436px;
+      height: 443px;
+      left: 0px;
+      top: 796px;
+
+      background: url(homepage/mountain.png);
+    }
+
+
+    .main4 {
+      position: absolute;
+      width: 1436px;
+      height: 665px;
+      left: 0px;
+      top: 1232px;
+
+      background: #FFFFFF;
+
+    }
+
+    .contbrows {
+      position: absolute;
+      width: 500px;
+      height: 39px;
+      left: 36px;
+      top: 21px;
+
+      /* Heading-4 */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #000000;
+
+    }
+
+    .main41 {
+      margin-top: 76px;
+    }
+
+    .main41x {
+      margin-left: 25px;
+    }
+
+    .viewmore {
+      background-color: white;
+      border: none;
+      position: absolute;
+      width: 150px;
+      height: 22px;
+      left: 672px;
+      top: 584px;
+
+      /* Button- TEXT */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      /* Primary-Button */
+
+      color: #217059;
+
+    }
+
+    .main42 {
+      position: absolute;
+      width: 1436px;
+      height: 623px;
+      left: 0px;
+      top: 1906px;
+
+      background: #FFFFFF;
+    }
+
+    .main421 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+
+      position: absolute;
+      width: 1356px;
+      height: 469px;
+
+      top: 70px;
+
+    }
+
+    .travnearu {
+      position: absolute;
+      width: 301px;
+      height: 24px;
+      left: 32px;
+      top: 26px;
+
+      /* Heading-4 */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      display: flex;
+      align-items: center;
+
+      color: #000000;
+    }
+
+    .main43 {
+      position: absolute;
+      width: 1436px;
+      height: 620px;
+      left: 0px;
+      top: 2538px;
+
+      background: #FFFFFF;
+    }
+
+    .main431 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+
+      position: absolute;
+      width: 1356px;
+      height: 469px;
+
+      top: 70px;
+    }
+
+    .main5 {
+      position: absolute;
+      width: 1436px;
+      height: 503px;
+      left: 0px;
+      top: 3167px;
+
+      background: #217059;
+
+    }
+
+    .comsupport {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 200px;
+
+      position: absolute;
+      width: 1350px;
+      height: 186px;
+      left: 41px;
+      top: 46px;
+
+    }
+
+    .darkwhite {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #FFFFFF;
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .normal {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      /* off white */
+
+      color: rgba(255, 255, 255, 0.7);
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .connectwithus {
+      position: absolute;
+      width: 143px;
+      height: 22px;
+      left: 656px;
+      top: 359px;
+
+      /* Button- TEXT */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: #FFFFFF;
+
+    }
+
+    .rights {
+      position: absolute;
+      top: 467px;
+      flex-direction: row;
+      width: 284px;
+      height: 22px;
+
+      /* Nav links */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+    }
+
+    .symbols {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 36px;
+
+      position: absolute;
+      width: 144px;
+      height: 24px;
+      left: 656px;
+      top: 407px;
+
+    }
+
+    .m1 {
+      width: 284px;
+      height: 22px;
+      margin-left: 52px;
+      /* Nav links */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .m2 {
+      margin-left: 695px;
+      width: 180px;
+      height: 22px;
+
+      /* Nav links */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .m3 {
+      margin-left: 67px;
+      width: 122px;
+      height: 22px;
+
+      /* Nav links */
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+
+
+
+    }
+
+    .main3:hover {
+      display: hidden;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <span class="fidneer"><span style="color: #0bb685">FID</span>NEER</span>
+
+      <div class="searchbutton" id="searchbutton1">
+        <span class="durbinimg"> <img src="homepage/durbin.png" alt="durbin" /></span>
+        <span class="searchform">
+          <form>
+            <label for="search"></label>
+            <input type="search" id="search" name="search" placeholder="Where are you travelling to" />
+          </form>
+        </span>
+        <span>
+          <img class="searchimg" src="homepage/searchbutton.png" alt="search button" /></span>
+      </div>
+
+      <img class="bell" src="homepage/bell.png" alt="bell" />
+      <img class="mail" src="homepage/mail.png" alt="mail" />
+      <button class="triptext mytrip">My Trips</button>
+      <button class="triptext postmytrip">Post New Trips</button>
+      <img class="navbarphoto" src="homepage/nav bar photo.png" alt="" />
+    </nav>
+  </header>
+
+  <section class="main2">
+    <div class="main21">
+      <div class="findbestpartner">
+        Find the best Partner for your Next Trip
+      </div>
+
+      <div class="main22">
+        <div class="searchbutton" id="searchbutton2">
+          <span class="durbinimg">
+            <img src="homepage/durbin.png" alt="durbin" /></span>
+          <span class="searchform">
+            <form>
+              <label for="search"></label>
+              <input type="search" id="search" name="search" placeholder="Where are you travelling to" />
+            </form>
+          </span>
+          <span>
+            <img class="searchimg" src="homepage/searchbutton.png" alt="search button" /></span>
+        </div>
+        <div class="manali1">
+          <div class="kullumanali"> Kullu & Manali</div>
+          <div class="kullumanali">Kerala</div>
+          <div class="kullumanali">Hiking</div>
+          <div class="kullumanali">Foodie</div>
+          <div class="kullumanali">Surfing</div>
+        </div>
+        <div class="manali2" id="manali2">
+          <div class="kullumanali">Road Trips</div>
+          <div class="kullumanali">Haridwar & Rishikesh</div>
+          <div class="kullumanali">Goa</div>
+          <div class="kullumanali">Foodie</div>
+          <div class="kullumanali">Trekking & Camping</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="main3"> </section>
+  <section class="main4">
+    <span class="contbrows">Continue Browsing </span>
+    <div class="main41">
+      <img class="main41x" src="homepage/a1.png" alt="">
+      <img class="main41x" src="homepage/a2.png" alt="">
+      <img class="main41x" src="homepage/a3.png" alt="">
+      <img class="main41x" src="homepage/a4.png" alt="">
+    </div>
+    <button class="viewmore">View more</button>
+  </section>
+  <section class="main42">
+    <div class="contbrows"> Similar Interest Travellers</div>
+    <div class="main421">
+      <a href="desk16.html"><img src="homepage/a5.png" alt="" class="main41x"></a>
+      <img src="homepage/a6.png" alt="" class="main41x">
+      <img src="homepage/a7.png" alt="" class="main41x">
+      <img src="homepage/a8.png" alt="" class="main41x">
+    </div>
+    <button class="viewmore">View more</button>
+  </section>
+  </section>
+  <section class="main43">
+    <span class="travnearu"> Travellers Near You </span>
+    <div class="main431">
+      <img src="homepage/a9.png" alt="" class="main41x">
+      <img src="homepage/a10.png" alt="" class="main41x">
+      <img src="homepage/a11.png" alt="" class="main41x">
+      <img src="homepage/a12.png" alt="" class="main41x">
+    </div>
+    <button class="viewmore">View more</button>
+  </section>
+  </section>
+
+
+  <section class="main5">
+    <div class="comsupport">
+      <div class="company">
+        <div class="darkwhite">Company</div>
+        <div class="normal">About Us</div>
+        <div class="normal">Careers</div>
+        <div class="normal">Privacy Policy</div>
+        <div class="normal">Terms of Service</div>
+      </div>
+      <div class="support1">
+        <div class="darkwhite" style="padding-left:10px">Support</div>
+        <div class="normal">Help and Support</div>
+        <div class="normal">Trust and Safety</div>
+        <div class="normal">Security</div>
+        <div class="normal">Contact Us</div>
+      </div>
+      <div class="support2">
+        <div class="darkwhite" style="padding-left:10px">Support</div>
+        <div class="normal">Refer a Friend</div>
+        <div class="normal">Travel Blogs</div>
+        <div class="normal">Travel community</div>
+        <div class="normal">Search for locals</div>
+      </div>
+      <div class="contactus">
+        <div class="darkwhite" style="padding-left:40px"> Contact Us</div>
+        <div class="normal" style="width:200px">
+          Nit Andhra Pradesh
+
+          Tadepalligudem,
+          West Godhavari,
+          Andhra Pradesh- 534101
+
+          Help@fidneer.in</div>
+      </div>
+    </div>
+
+    <div class="connectwithus">Connect with Us</div>
+    <div class="symbols">
+      <img src="homepage/twitter.png" alt="" class="footer" style="opacity: 100;">
+      <img src="homepage/mail.png" alt="" class="footer">
+      <img src="homepage/fb.png" alt="" class="footer">
+    </div>
+    <div class="rights">
+      <div class="m1">All right Reserved @fidneer2023 </div>
+      <div class="m2">Terms and Condition </div>
+      <div class="m3">Privacy Policy</div>
+    </div>
+  </section>
+  <script>
+    const main3_ = document.getElementsByClassName('main3')[0];
+    const main2_ = document.getElementsByClassName('main2')[0];
+
+
+    main3_.addEventListener('mouseover', function () {
+      main2_.style.display = 'none';
+    });
+
+    main3_.addEventListener('mouseout', function () {
+      main2_.style.display = 'block';
+    });
+    const searchbar = document.getElementById(`searchbutton1`);
+    const navbarElements = document.getElementsByClassName(`header`);
+    const main2Elements = document.getElementsByClassName('main2');
+
+    document.addEventListener('mouseover', function (event) {
+      let isMouseOverHeader = false;
+      let isMouseOverMain2 = false;
+
+      for (let i = 0; i < navbarElements.length; i++) {
+        if (event.target.closest('.header') === navbarElements[i]) {
+          isMouseOverHeader = true;
+          break;
+        }
+      }
+
+      for (let i = 0; i < main2Elements.length; i++) {
+        if (event.target.closest('.main2') === main2Elements[i]) {
+          isMouseOverMain2 = true;
+          break;
+        }
+      }
+
+      if (!isMouseOverHeader && !isMouseOverMain2) {
+        searchbar.style.display = 'flex';
+      } else {
+        searchbar.style.display = 'none';
+      }
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>
